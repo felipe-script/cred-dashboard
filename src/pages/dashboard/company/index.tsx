@@ -1,10 +1,12 @@
 import React from 'react'
 import { Card, CardHeader, CardBody, CardFooter, Text } from '@chakra-ui/react'
-export const Dashboard = (): React.ReactElement =>{
+export const Company = (): React.ReactElement =>{
 
     return (<Card>
         <CardBody>
-            <Text>View a summary of all your customers over the last month.</Text>
+            <Text>Company</Text>
         </CardBody>
     </Card>)
 }
+
+export default Company

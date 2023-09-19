@@ -1,14 +1,14 @@
-import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import {Dashboard} from '../pages/dashboard'
+import React from "react"
+import { Routes, Route, Navigate } from "react-router-dom"
+import {Dashboard, Company} from '../pages/dashboard/'
 
 const PublicRoutes: React.FC = (): React.ReactElement => {
   return (
     <Routes>
       <Route path='/' element={<Dashboard/>} />
-      <Route path='/dash' element={<h1>dash</h1>} />
+      <Route path='/company' element={<Company/>} />
     </Routes>
-  );
+  )
 }
 
 export default PublicRoutes;
