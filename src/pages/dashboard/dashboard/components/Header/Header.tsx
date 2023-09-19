@@ -7,10 +7,10 @@ export const Header = (): React.ReactElement => {
     return (
         <>
             <Menu />
-            <Card height={183} position={'absolute'} width={'80%'} top={70} left={'50%'} transform={'translateX(-50%)'}>
+            <Card minHeight={183} position={'absolute'} width={'80%'} top={70} left={'50%'} transform={'translateX(-50%)'}>
                 <CardBody>
                     <CompanyInfoFirstRow />
-                    <Flex ml={108}>
+                    <Flex ml={{base: 0, lg: 108}} mt={3}>
                         <TabMenu />
                         <CompanyInfoRowTwo/>
                     </Flex>

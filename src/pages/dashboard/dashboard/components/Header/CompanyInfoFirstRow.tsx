@@ -3,7 +3,7 @@ import * as Icons from '../../../../../components/Icons/Icons.tsx'
 
 export const ProductorSection = () => {
   return (
-    <Flex>
+    <Flex direction={{base: 'column', md: 'row'}} alignItems={{base: 'center', md: 'flex-start'}}>
     <Box height={81} width={81} bg={'gray.100'} borderRadius={'md'}>
         <Flex direction={'column'} alignItems={'center'} height={'100%'} justify={'center'}>
             <Icons.IconFarm w="35px" h="35px" mb="5px" />

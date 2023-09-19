@@ -3,7 +3,7 @@ import * as Icons from '../../../../../components/Icons/Icons.tsx'
 
 export const ProductorInfo = () => {
   return (
-    <Flex ml={'auto'} gap={3}>
+    <Flex ml={'auto'} gap={3} direction={{sm: 'column', md: 'row'}}>
       <Flex direction={'column'}>
         <Heading fontSize={'md'} color={'gray.400'}>CTC</Heading>
         <Text fontWeight={'bold'} color={'gray.600'}><Icons.IconPerson w="16px" h="16px" mr={'2'} />Jorge M.</Text>
