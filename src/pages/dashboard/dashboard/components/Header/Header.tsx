@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, Flex,  } from '@chakra-ui/react'
+import { Card, CardBody, Flex } from '@chakra-ui/react'
 import { Menu } from '../../../../../components/Menu'
 import { CompanyInfoFirstRow, TabMenu, CompanyInfoRowTwo } from '..'
 

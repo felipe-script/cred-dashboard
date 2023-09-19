@@ -1,16 +1,16 @@
 import { Text, Heading, Flex, Box } from '@chakra-ui/react'
 import * as Icons from '../../../../../components/Icons/Icons.tsx'
 
-export const ProductorSection = () => {
+export const CompanyInfoFirstRow = () => {
   return (
-    <Flex direction={{base: 'column', md: 'row'}} alignItems={{base: 'center', md: 'flex-start'}}>
+    <Flex direction={{base: 'column', md: 'row'}} alignItems={'center'}>
     <Box height={81} width={81} bg={'gray.100'} borderRadius={'md'}>
         <Flex direction={'column'} alignItems={'center'} height={'100%'} justify={'center'}>
             <Icons.IconFarm w="35px" h="35px" mb="5px" />
             <Text fontSize={10}>PRODUTOR RURAL</Text>
         </Flex>
     </Box>
-    <Flex direction={'column'} justify={'center'} ml={8}>
+    <Flex direction={'column'} justify={'center'} ml={8} mt={{base: 2, md: 0}}>
         <Heading fontSize={'md'}>Produtor João Ferreira</Heading>
         <Text ml={-7} color='gray.400' fontWeight={'bold'} fontSize={'sm'}>02.916.265/0001-60</Text>
     </Flex>
@@ -24,4 +24,4 @@ export const ProductorSection = () => {
   )
 }
 
-export default ProductorSection
+export default CompanyInfoFirstRow
