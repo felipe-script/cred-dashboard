@@ -1,7 +1,7 @@
 import { Flex, Heading, Text } from '@chakra-ui/react'
 import * as Icons from '../../../../../components/Icons/Icons.tsx'
 
-export const ProductorInfo = () => {
+export const CompanyInfoRowTwo = () => {
   return (
     <Flex ml={'auto'} gap={3} direction={{sm: 'column', md: 'row'}}>
       <Flex direction={'column'}>
@@ -16,4 +16,4 @@ export const ProductorInfo = () => {
   )
 }
 
-export default ProductorInfo
+export default CompanyInfoRowTwo
