@@ -45,7 +45,7 @@ export const FarmLocation = () => {
     }
 
     return (
-        <Flex direction={'column'} width={'60%'} ml={6} position={'relative'}>
+        <>
             {isLoaded ? (
                 <>
                     <Flex gap={4} mb={5} justify={'flex-end'}>
@@ -84,7 +84,7 @@ export const FarmLocation = () => {
                     </GoogleMap>
                 </>
             ) : <></>}
-        </Flex>
+        </>
     )
 }
 
