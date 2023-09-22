@@ -5,8 +5,7 @@ export const FarmSection = () => {
     return (
         <BoxSection title='Fazendas' mt={6}>
             <Flex gap={10} flexWrap={'wrap'}>
-                <FarmItem />
-                <FarmItem />
+            <FarmItem />
             </Flex>
         </BoxSection>
     )
