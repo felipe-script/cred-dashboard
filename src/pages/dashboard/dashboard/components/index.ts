@@ -10,3 +10,4 @@ export {default as  FarmInformationSection} from './FarmInformation/FarmInformat
 export {default as  BoxArea} from './BoxArea'
 export {default as  Tablerize} from './Tablerize'
 export {default as  FarmDetails} from './FarmInformation/FarmDetails'
+export {default as  FarmLocation} from './FarmInformation/FarmLocation'

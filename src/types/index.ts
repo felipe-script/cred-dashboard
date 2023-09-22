@@ -1,1 +1,4 @@
-export type Cred = {}
+export type CoordinatesType = {
+  lat: number,
+  lng: number
+}
