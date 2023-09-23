@@ -1,5 +1,5 @@
 import {
-    Flex, Heading, Box, Text, Divider,
+    Flex, Box, Text,
 } from '@chakra-ui/react'
 import * as Icons from '../../../../components/Icons/Icons.tsx'
 
