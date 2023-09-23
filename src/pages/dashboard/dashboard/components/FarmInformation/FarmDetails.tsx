@@ -14,6 +14,7 @@ export const FarmDetails = () => {
                 <Text color={'gray.600'} fontWeight={'bold'}>ALCINÓPOLIS - MS</Text>
                 <Divider />
             </Flex>
+            
             <Flex direction={'column'} gap={3} mt={3}>
                 <Text color={'gray.400'}>NIRF</Text>
                 <Text color={'gray.600'} fontSize={'lg'} fontWeight={'bold'}>-</Text>

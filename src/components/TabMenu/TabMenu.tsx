@@ -1,5 +1,5 @@
 import { Tabs, TabList, Tab, Flex } from '@chakra-ui/react'
-import * as Icons from '../../../../components/Icons/Icons.tsx'
+import * as Icons from '../Icons/Icons.tsx'
 export const TabMenu = () => {
     return (
         <Tabs variant='soft-rounded' colorScheme='gray'>

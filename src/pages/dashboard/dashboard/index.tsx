@@ -1,12 +1,6 @@
 import React from 'react'
-import {
-    Container, Card, CardBody, Flex, Heading, Box, Text, Divider,
-    TableContainer, Th, Table, TableCaption, Thead, Tbody, Tr, Td,
-    Tfoot
-}
-    from '@chakra-ui/react'
-import { CheckCircleIcon } from '@chakra-ui/icons'
-import { Header, TotalAreas, FarmSection, BoxSection, FarmInformationSection } from './components'
+import { Container } from '@chakra-ui/react'
+import { Header, TotalAreas, FarmSection, FarmInformationSection } from './components'
 import * as Icons from '../../../components/Icons/Icons.tsx'
 
 export const Dashboard = (): React.ReactElement => {

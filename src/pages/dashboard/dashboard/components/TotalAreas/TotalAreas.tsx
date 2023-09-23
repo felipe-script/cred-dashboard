@@ -1,6 +1,5 @@
-import { Flex, Heading, Box, Text } from '@chakra-ui/react'
-import * as Icons from '../../../../../components/Icons/Icons.tsx'
-import { BoxSection, BoxArea} from '..'
+import { Flex, Heading } from '@chakra-ui/react'
+import { BoxSection, BoxArea } from '../../../../../components/'
 
 export const TotalAreas = () => {
     return (

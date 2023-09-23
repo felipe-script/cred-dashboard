@@ -3,8 +3,6 @@ import React from 'react'
 import { Flex, Button, Box } from '@chakra-ui/react'
 import { GoogleMap, useJsApiLoader, Polygon } from '@react-google-maps/api';
 
-import { BoxSection, BoxArea, Tablerize, FarmDetails } from './../../components'
-
 import { CoordinatesType } from '../../../../../types'
 
 export const FarmLocation = () => {

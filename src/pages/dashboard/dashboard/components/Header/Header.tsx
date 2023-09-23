@@ -1,7 +1,8 @@
 import React from 'react'
-import { Card, CardBody, Flex } from '@chakra-ui/react'
+import {  Flex } from '@chakra-ui/react'
 import { Menu } from '../../../../../components/Menu'
-import { CompanyInfoFirstRow, TabMenu, CompanyInfoRowTwo, BoxSection } from '..'
+import { CompanyInfoFirstRow,  CompanyInfoRowTwo } from '..'
+import { BoxSection, TabMenu } from '../../../../../components' 
 
 export const Header = (): React.ReactElement => {
     return (

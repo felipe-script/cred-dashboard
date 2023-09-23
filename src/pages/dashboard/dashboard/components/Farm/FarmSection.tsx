@@ -1,5 +1,7 @@
-import { BoxSection, FarmItem } from '..'
 import { Flex } from '@chakra-ui/react'
+
+import { FarmItem } from '..'
+import { BoxSection } from '../../../../../components'
 
 export const FarmSection = () => {
     return (
