@@ -1,5 +1,5 @@
 export {default as BoxArea} from './BoxArea/BoxArea'
+export {default as Menu} from './Menu/menu'
 export {default as Tablerize} from './Tablerize/Tablerize'
-export {default as TabMenu} from './TabMenu/TabMenu'
 export {default as BoxSection} from './BoxSection/BoxSection'
-export {default as Header} from './Header/Header'
+export {default as ChakraLink} from './ChakraLink/ChakraLink'

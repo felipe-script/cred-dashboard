@@ -1,8 +1,7 @@
 import React from 'react'
 import {  Flex } from '@chakra-ui/react'
-import { Menu } from '../Menu'
-import { CompanyInfoFirstRow,  CompanyInfoRowTwo } from '../../pages/dashboard/dashboard/components'
-import { BoxSection, TabMenu } from '..' 
+import { Menu, BoxSection } from '../../../../../components'
+import { CompanyInfoFirstRow,  CompanyInfoRowTwo, Navigation } from '..'
 
 export const Header = (): React.ReactElement => {
     return (
@@ -12,7 +11,7 @@ export const Header = (): React.ReactElement => {
                 <>
                 <CompanyInfoFirstRow />
                     <Flex ml={{base: 0, lg: 108}} mt={3}>
-                        <TabMenu />
+                        <Navigation />
                         <CompanyInfoRowTwo/>
                     </Flex>
                 </>
