@@ -1,5 +1,5 @@
 import { Flex, Heading, Text } from '@chakra-ui/react'
-import * as Icons from '../../../../../components/Icons/Icons.tsx'
+import * as Icons from '../Icons/Icons.tsx'
 
 export const CompanyInfoRowTwo = () => {
   return (

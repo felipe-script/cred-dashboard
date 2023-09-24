@@ -1,6 +1,5 @@
-export {default as  CompanyInfoFirstRow} from './Header/CompanyInfoFirstRow'
-export {default as  CompanyInfoRowTwo} from './Header/CompanyInfoRowTwo'
-export {default as  Header} from '../../../../components/Header/Header'
+export {default as  CompanyInfoFirstRow} from '../../../../components/Header/CompanyInfoFirstRow'
+export {default as  CompanyInfoRowTwo} from '../../../../components/Header/CompanyInfoRowTwo'
 export {default as  TotalAreas} from './TotalAreas/TotalAreas'
 export {default as  FarmItem} from './Farm/FarmItem'
 export {default as  FarmSection} from './Farm/FarmSection'
