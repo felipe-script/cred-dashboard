@@ -45,8 +45,8 @@ export const FarmInformationSection = () => {
         
         <Flex direction={'column'} width={{ base: '100%', md: '60%' }} ml={{ base: 0, md: 6 }} position={'relative'}>
           <FarmLocation />
-          <AreaChart data={areaChart} />
-          <BarChart data={barChart} />
+          <AreaChart data={areaChart} title='Produtividade média por área (Sc/ha)' />
+          <BarChart data={barChart} title='NVDI médio e Chuva média por área (mm/ha)' />
         </Flex>
       </Flex>
     </BoxSection>

@@ -6,14 +6,16 @@ import { FarmSelectionProvider } from '../../../context'
 
 export const Dashboard = (): React.ReactElement => {
     return (
-        <Container minW={'100%'} position={'relative'}>
-            <Header />
+        <>
+            {/* <Container minW={'100%'} position={'relative'}> */}
+            {/* <Header /> */}
             <FarmSelectionProvider>
                 <TotalAreas />
                 <FarmSection />
                 <FarmInformationSection />
             </FarmSelectionProvider>
-        </Container>
+        </>
+        //  </Container>
     )
 }
 

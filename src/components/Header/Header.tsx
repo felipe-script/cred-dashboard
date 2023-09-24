@@ -1,8 +1,8 @@
 import React from 'react'
 import {  Flex } from '@chakra-ui/react'
-import { Menu } from '../../../../../components/Menu'
-import { CompanyInfoFirstRow,  CompanyInfoRowTwo } from '..'
-import { BoxSection, TabMenu } from '../../../../../components' 
+import { Menu } from '../Menu'
+import { CompanyInfoFirstRow,  CompanyInfoRowTwo } from '../../pages/dashboard/dashboard/components'
+import { BoxSection, TabMenu } from '..' 
 
 export const Header = (): React.ReactElement => {
     return (
