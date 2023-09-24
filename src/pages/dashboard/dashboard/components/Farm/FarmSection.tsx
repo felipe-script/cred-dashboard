@@ -5,12 +5,15 @@ import { BoxSection } from '../../../../../components'
 import { useFarmSelectionContext } from '../../../../../context'
 
 export const FarmSection = () => {
-    const { farms } = useFarmSelectionContext()
+    const { farms, selectedFarmOption, handleSelectedFarmOption } = useFarmSelectionContext()
+
+    const handleClickFarmItem = (id: number): void => handleSelectedFarmOption(id)
 
     const renderFarmItem = (): React.ReactElement[] => {
         return farms.map((farm, index) => {
+            const isFarmSelected = selectedFarmOption.id === farm.id
             return (
-                <FarmItem key={index} details={farm.details} />
+                <FarmItem key={index} farm={farm} isSelected={isFarmSelected} onClick={handleClickFarmItem} />
             )
         })
     }

@@ -1,6 +1,4 @@
 export {default as BoxArea} from './BoxArea/BoxArea'
 export {default as Tablerize} from './Tablerize/Tablerize'
-export {default as BarChart} from './Charts/BarChart'
-export {default as AreaChart} from './Charts/AreaChart'
 export {default as TabMenu} from './TabMenu/TabMenu'
 export {default as BoxSection} from './BoxSection/BoxSection'

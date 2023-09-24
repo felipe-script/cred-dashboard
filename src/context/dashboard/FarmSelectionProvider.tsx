@@ -4,7 +4,7 @@ import mockFarms from '../../mocks/mock-farms.json'
 
 type FarmSelectionContextType = {
   farms: FarmType[],
-  selectedFarmOption: FarmType | null,
+  selectedFarmOption: FarmType,
   handleSelectedFarmOption: (farmId: number) => void;
 }
 
@@ -12,7 +12,8 @@ export const FarmSelectionContext = createContext<FarmSelectionContextType | nul
 
 export const FarmSelectionProvider: React.FC<{children: React.ReactNode}> = ({ children }) => {
   const farms: FarmType[]  = [...mockFarms.farms]
-  const [selectedFarmOption, setSelectedFarmOption] = useState<FarmType | null>(null)
+  const [defaultFarmSelected] = farms
+  const [selectedFarmOption, setSelectedFarmOption] = useState<FarmType>(defaultFarmSelected)
 
   const handleSelectedFarmOption = (farmId: number): void => {
     const farm = farms.find(farm => farm.id === farmId)

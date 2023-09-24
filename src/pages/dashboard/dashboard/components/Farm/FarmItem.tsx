@@ -1,14 +1,18 @@
 import { Flex, Heading, Text } from '@chakra-ui/react'
 import * as Icons from '../../../../../components/Icons/Icons.tsx'
-import { DetailsType } from '../../../../../types'
+import { FarmType } from '../../../../../types'
 
-type FarmItemType = {
-    details: DetailsType,
+type FarmItemProps = {
+    farm: FarmType,
+    isSelected: boolean,
+    onClick: (id: number) => void,
 }
 
-export const FarmItem: React.FC<FarmItemType> = ({ details }) => {
+export const FarmItem: React.FC<FarmItemProps> = ({onClick, farm, isSelected }) => {
+    const { details, id } = farm
     return (
         <Flex
+            onClick={() => onClick(id)}
             gap={6}
             minW={330}
             _hover={{ bg: 'gray.50' }}
@@ -16,6 +20,7 @@ export const FarmItem: React.FC<FarmItemType> = ({ details }) => {
             alignItems={'center'} p={2}
             borderRadius={'md'}
             transition={'background .5s'}
+            bg={isSelected ? 'gray.50' : 'transparent'}
             cursor={'pointer'}>
             <Icons.IconFarm w={'50px'} h={'50px'} mixBlendMode={'multiply'} ml={6} />
             <Flex p={'3'} direction={'column'} minH={59} flex={1} textAlign={'left'} gap={3}>

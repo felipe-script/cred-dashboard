@@ -3,14 +3,14 @@ import React from 'react'
 import { Flex, Button, Box } from '@chakra-ui/react'
 import { GoogleMap, useJsApiLoader, Polygon } from '@react-google-maps/api';
 
-import { CoordinatesType } from '../../../../../types'
+import { useFarmSelectionContext } from '../../../../../context'
 
 export const FarmLocation = () => {
+    const { selectedFarmOption: { coordinates } } = useFarmSelectionContext()
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey: ""
     })
-
 
     const containerStyle: React.CSSProperties = {
         width: '100%',
@@ -18,19 +18,10 @@ export const FarmLocation = () => {
         borderRadius: '14px',
     };
 
-    const center: CoordinatesType = {
-        lat: 52.513281130944264, lng: 13.36346611492683
-    };
-
-    const path: CoordinatesType[] = [
-        { lat: 52.513281130944264, lng: 13.36346611492683 },
-        { lat: 52.512575957821824, lng: 13.362994046140209 },
-        { lat: 52.512445368964684, lng: 13.363637776303783 },
-        { lat: 52.513124426783875, lng: 13.364088387418285 }
-    ];
+    const [centerOfTheFarm] = coordinates;
 
     const polygonOptions: google.maps.PolygonOptions = {
-        paths: path,
+        paths: coordinates,
         strokeColor: '#FF0000',
         strokeOpacity: 0.8,
         strokeWeight: 2,
@@ -72,12 +63,12 @@ export const FarmLocation = () => {
                         options={mapOptions}
                         mapContainerClassName='App-map'
                         mapContainerStyle={containerStyle}
-                        center={center}
+                        center={centerOfTheFarm}
                         zoom={17}
                     >
                         <Polygon
                             options={polygonOptions}
-                            path={path}
+                            path={coordinates}
                         />
                     </GoogleMap>
                 </>

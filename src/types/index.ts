@@ -47,4 +47,6 @@ export type FarmType = {
   owners: OwnersType,
   barChart: BarChartType[],
   areaChart: AreaChartType[]
+  areas: string[]
+  coordinates: CoordinatesType[]
 }

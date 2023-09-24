@@ -1,11 +1,18 @@
 import { Flex, Heading } from '@chakra-ui/react'
 
-import { BoxSection, BoxArea, Tablerize,  AreaChart, BarChart } from './../../../../../components'
+import { BoxSection, BoxArea, Tablerize } from './../../../../../components'
+import { AreaChart, BarChart  } from '../'
 import { FarmDetails, FarmLocation } from '../'
+import { useFarmSelectionContext } from '../../../../../context'
 
 export const FarmInformationSection = () => {
+  const { selectedFarmOption } = useFarmSelectionContext()
+  const { enrollment, owners, areas, areaChart, barChart, details } = selectedFarmOption
+
+  const renderBoxAreas = (): React.ReactElement[] => areas.map((text, index) => <BoxArea text={text} key={`${text}-${index}`}/>)
+
   return (
-    <BoxSection title={'Fazenda Salto Alto'} mt={6} textAlign={'left'}>
+    <BoxSection title={details.title} mt={6} textAlign={'left'}>
       {/* column left */}
       <Flex direction={{ base: 'column', md: 'row' }}>
         <Flex direction={'column'} width={{ base: '100%', md: '40%' }}>
@@ -13,22 +20,16 @@ export const FarmInformationSection = () => {
           <Flex direction={'column'} mt={10}>
             <Tablerize
               title="MATRÍCULAS"
-              headers={['Num.', 'Área', 'UF', 'Município']}
-              rows={[
-                ['12102', '233.2', 'MS', 'Coxim'],
-                ['1102', '23.2', 'SP', 'Braganca Paulista'],
-              ]}
+              headers={enrollment.headers}
+              rows={enrollment.rows}
             />
           </Flex>
 
           <Flex direction={'column'} mt={10}>
             <Tablerize
               title="PROPRIETÁRIOS"
-              headers={['Nome.', '%']}
-              rows={[
-                ['FERNANDO C.', '12.3'],
-                ['CARLOS L.', '87.7'],
-              ]}
+              headers={owners.headers}
+              rows={owners.rows}
             />
           </Flex>
 
@@ -37,16 +38,15 @@ export const FarmInformationSection = () => {
           <Flex direction={'column'} mt={10} gap={6}>
             <Heading fontSize={'lg'} mr={{ base: 0, md: '16' }} mb={3} color={'gray.400'}>ÁREAS</Heading>
             <Flex gap={3}>
-              <BoxArea />
-              <BoxArea />
+              {renderBoxAreas()}
             </Flex>
           </Flex>
         </Flex>
         
         <Flex direction={'column'} width={{ base: '100%', md: '60%' }} ml={{ base: 0, md: 6 }} position={'relative'}>
           <FarmLocation />
-          <AreaChart />
-          <BarChart />
+          <AreaChart data={areaChart} />
+          <BarChart data={barChart} />
         </Flex>
       </Flex>
     </BoxSection>
