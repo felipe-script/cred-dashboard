@@ -10,7 +10,9 @@
               "state": "RJ",
               "nirf": "1234567890123",
               "incra": "9876543210987",
-              "status": "PAY_OFF"
+              "status": "PAY_OFF",
+              "area": "430 ha.",
+              "hec": "330 ha."
             },
             "enrollment": {
               "headers": [
@@ -149,7 +151,9 @@
               "state": "MT",
               "nirf": "9876543210011",
               "incra": "1234567890876",
-              "status": "PAY_OFF"
+              "status": "PAY_OFF",
+              "area": "230 ha.",
+              "hec": "130 ha."
             },
             "enrollment": {
               "headers": [
@@ -288,7 +292,9 @@
               "state": "PR",
               "nirf": "5678901234009",
               "incra": "7654321098765",
-              "status": "PAY_OFF"
+              "status": "PAY_OFF",
+              "area": "730 ha.",
+              "hec": "322 ha."
             },
             "enrollment": {
               "headers": [

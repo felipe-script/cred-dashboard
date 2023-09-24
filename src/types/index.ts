@@ -12,9 +12,11 @@ export type DetailsType = {
   nirf: string
   incra: string
   status: string
+  area: string
+  hec: string
 }
 
-export interface TableType {
+export type TableType = {
   headers: string[]
   rows: string[][]
 }
@@ -38,7 +40,7 @@ export type AreaChartType = {
   cnt: number
 }
 
-export type SelectedFarmType = {
+export type FarmType = {
   id: number
   details: DetailsType,
   enrollment: EnrollmentType,

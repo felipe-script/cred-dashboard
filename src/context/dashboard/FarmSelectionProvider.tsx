@@ -1,17 +1,18 @@
 import React, { createContext, useState, useContext } from 'react'
-import { SelectedFarmType } from '../../types'
+import { FarmType } from '../../types'
 import mockFarms from '../../mocks/mock-farms.json'
 
 type FarmSelectionContextType = {
-  selectedFarmOption: SelectedFarmType | null,
+  farms: FarmType[],
+  selectedFarmOption: FarmType | null,
   handleSelectedFarmOption: (farmId: number) => void;
 }
 
 export const FarmSelectionContext = createContext<FarmSelectionContextType | null>(null);
 
 export const FarmSelectionProvider: React.FC<{children: React.ReactNode}> = ({ children }) => {
-  const farms: SelectedFarmType[]  = [...mockFarms.farms]
-  const [selectedFarmOption, setSelectedFarmOption] = useState<SelectedFarmType | null>(null)
+  const farms: FarmType[]  = [...mockFarms.farms]
+  const [selectedFarmOption, setSelectedFarmOption] = useState<FarmType | null>(null)
 
   const handleSelectedFarmOption = (farmId: number): void => {
     const farm = farms.find(farm => farm.id === farmId)
@@ -21,7 +22,7 @@ export const FarmSelectionProvider: React.FC<{children: React.ReactNode}> = ({ c
   }
 
   return (
-    <FarmSelectionContext.Provider value={{ selectedFarmOption, handleSelectedFarmOption }}>
+    <FarmSelectionContext.Provider value={{farms, selectedFarmOption, handleSelectedFarmOption }}>
       {children}
     </FarmSelectionContext.Provider>
   )
