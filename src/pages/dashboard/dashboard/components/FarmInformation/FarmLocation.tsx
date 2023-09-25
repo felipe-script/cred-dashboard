@@ -9,7 +9,7 @@ export const FarmLocation = () => {
     const { selectedFarmOption: { coordinates } } = useFarmSelectionContext()
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: ""
+        googleMapsApiKey: "AIzaSyD55PCzftT8OjkGBFjN8PRTNdqKsBeIgTE"
     })
 
     const containerStyle: React.CSSProperties = {
