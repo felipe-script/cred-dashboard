@@ -28,7 +28,7 @@ Once you have your API key, follow these steps:
 
 To run the application on your computer, follow these simple steps:
 
-1 . Install project dependencies
+1. Install project dependencies
 ```js
 npm install
   
