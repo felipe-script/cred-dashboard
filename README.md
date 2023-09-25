@@ -11,9 +11,11 @@ Before you can dive into this project, make sure you have the following software
 
 ## Google Maps Integration
 
-This system incorporates Google Maps API to ensure a seamless experience, preventing common errors like 'This page can't load Google Maps correctly' or 'For development purposes only.' 🗺️
+This system incorporates Google Maps API to ensure a seamless experience.
 
-To get started, i recommend creating your Google Maps API key by visiting [Google Maps API Key](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=pt-br).
+To get started, I recommend creating your Google Maps API key by visiting [Google Maps API Key](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=pt-br).
+
+to prevent common errors like 'This page can't load Google Maps correctly' or 'For development purposes only.' 🗺️
 
 Once you have your API key, follow these steps:
 
