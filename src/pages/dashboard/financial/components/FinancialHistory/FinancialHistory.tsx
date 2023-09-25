@@ -75,7 +75,7 @@ export const FinancialHistory = () => {
     <Grid templateRows='repeat(1, 1fr)'
         templateColumns={{ base: '100%', md: '20% 50% 30%' }} gap={6}>
         <GridItem w='100%' borderRadius={'lg'} shadow={'md'}p={3}>
-            <Heading fontSize={18}>Heading</Heading>
+            <Heading fontSize={18}>Rating Final</Heading>
             <Text color={'green.400'} fontWeight={'bold'} fontSize={'64px'}>A</Text>
             <Text>96,5</Text>
             <Text color={'gray.400'} my={3}>OBJETIVO</Text>
