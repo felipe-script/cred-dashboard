@@ -50,23 +50,20 @@ const data = [
 
 const history = {
   "headers": [
-      "Num.",
-      "Área",
-      "UF",
-      "Município"
+      "2019",
+      "2020",
+      "2021",
   ],
   "rows": [
       [
-          "7502",
-          "400.5",
-          "RJ",
-          "Itaguaí"
+          "Pré Pagamento",
+          "R$ 12.000.00",
+          "R$ 12.000.00"
       ],
       [
-          "2201",
-          "120.3",
-          "SP",
-          "São Paulo"
+        "Pré Pagamento",
+        "R$ 12.000.00",
+        "R$ 12.000.00"
       ]
   ]
 }
