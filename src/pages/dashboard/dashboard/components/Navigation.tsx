@@ -6,7 +6,7 @@ import * as Icons from '../../../../components/Icons/Icons.tsx'
 export const Navigation = () => {
     return (
         <Flex direction={{ base: 'column', md: 'row' }} gap={3}>
-            <ChakraLink  to='/'>
+            <ChakraLink to='/'>
                 <Icons.IconLayers w="16px" h="16px" mt={'0.5'} />&nbsp;Empresas
             </ChakraLink>
 
@@ -15,7 +15,7 @@ export const Navigation = () => {
             </ChakraLink>
 
             <ChakraLink to={'/financial'}>
-            <Icons.IconFinance w="16px" h="16px" mt={'0.5'} />&nbsp;Financeiro
+                <Icons.IconFinance w="16px" h="16px" mt={'0.5'} />&nbsp;Financeiro
             </ChakraLink>
         </Flex>
     )

@@ -1,7 +1,7 @@
 import { NavLink as RouterNavLink, NavLinkProps } from 'react-router-dom'
 import { Link as ChakraLinkC, LinkProps as ChakraLinkCProps } from '@chakra-ui/react'
 
-type ChakraLinkWithReactRouter = & NavLinkProps &ChakraLinkCProps
+type ChakraLinkWithReactRouter = &NavLinkProps &ChakraLinkCProps
 
 type ChakraLinkProps = ChakraLinkWithReactRouter & {
     children: React.ReactNode

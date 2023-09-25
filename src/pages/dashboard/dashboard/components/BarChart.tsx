@@ -1,17 +1,17 @@
-import { Box, Heading } from '@chakra-ui/react'
+import { Box, Heading, BoxProps } from '@chakra-ui/react'
 import {
   Area, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, ComposedChart, Legend, Bar
 } from 'recharts';
 import { BarChartType } from '../../../../types'
 
-type BarChartProps = {
+type BarChartProps =  BoxProps & {
   data: BarChartType[]
   title: string
 }
-export const BarChart: React.FC<BarChartProps> = ({ data, title }) => {
+export const BarChart: React.FC<BarChartProps> = ({ data, title, ...rest}) => {
   return (
-    <Box width={'100%'} height={'235px'} position={'relative'} mt={100}>
+    <Box width={'100%'} height={'235px'} position={'relative'} mt={100} {...rest}>
       <Heading fontSize={'md'} ml={3} mb={3}>{title}</Heading>
       <ResponsiveContainer width="100%" height="100%">
         <ComposedChart
